@@ -137,7 +137,7 @@ class Bot():
 
     def say_hello(self):
         # Say hello to owner!
-        self.msg(self.owner, 'Hola admin soy Kecv pon !ayuda para ver mis comandos!.')
+        self.msg(self.owner, 'Hola admin soy Hokage pon !ayuda para ver mis comandos!.')
     
     def get_uptime(self):
         time_actual = time.time()
@@ -518,7 +518,7 @@ Con <<!ayuda comando>> para una ayuda de comandos específicos..''' % self.nick
 	   
             p = self.cmd_general_p(r'(version)[ ]*$', message)
             if p is not None:
-	     self.msg(channel_to, 'Kecv 1.5 (c) 2016 JoseACS')
+	     self.msg(channel_to, 'Hokage 1.5 (c) 2016 JoseACS')
              return
 
             p = self.cmd_general_p(r'(bye|chao|adios)[ ]*$', message)
