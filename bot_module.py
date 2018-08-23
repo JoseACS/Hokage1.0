@@ -36,8 +36,8 @@ class Bot():
     # Default configuration.
     network = 'irc.freenode.net'
     port = 6667
-    nick = 'Kecv'
-    channel = ['##Kecv']
+    nick = 'Hokage'
+    channel = ['#hokage']
     owner = 'JoseACS'
 
     log_file = 'log_'
@@ -411,17 +411,6 @@ class Bot():
                     ayuda_str = '  !quit  -- para el bot. Usted necesita ser owner del bot.'
                 elif ayuda_cmd == 'topic':
                     ayuda_str = '  !topic text  -- Pone un tema al canal.'
-                elif ayuda_cmd == 'kick':
-                    ayuda_str = '  !kick nick -- Expulsa a un usuario.'
-                elif ayuda_cmd == 'ban':
-                    ayuda_str = '  !ban nick -- Banea a un usuario.'
-                elif ayuda_cmd == 'op':
-                    ayuda_str = '  !op  -- Da modo operador solo al Owner.'
-                elif ayuda_cmd == 'deop':
-                    ayuda_str = '  !deop  -- quita el modo operador solo al Owner.'
-                elif ayuda_cmd == 'part':
-                    ayuda_str = '''  !part  -- Sale del canal.
-!part  channel[,channel]*  -- sale de los canales.'''
                 elif ayuda_cmd == 'join':
                     ayuda_str = '  !join  channel[,channel]*  -- Entra a los canales.' 
                 elif ayuda_cmd == 'ayuda':
@@ -455,11 +444,11 @@ it sends him a private message showing text.'''
             r = self.cmd_one_p(r'ayuda', message)
             if r is not None:
                 print "ayuda: ", r
-                ayuda_str = '''Mi codigo esta en https://github.com/JoseACS/Kecv - lista de comandos:
+                ayuda_str = '''Mi codigo esta en https://github.com/JoseACS/Hokage1.0 - lista de comandos:
 part, join, ayuda, uptime, say, sayc, tell, version
 .
 Los mandatos administrativos:
-quit, upgrade, nick, reconnect, op, deop, kick, ban
+quit, upgrade, nick, reconnect, join, sayc, tell
 .
 invocación de mandato:
  !quit 
@@ -518,7 +507,7 @@ Con <<!ayuda comando>> para una ayuda de comandos específicos..''' % self.nick
 	   
             p = self.cmd_general_p(r'(version)[ ]*$', message)
             if p is not None:
-	     self.msg(channel_to, 'Hokage 1.5 (c) 2016 JoseACS')
+	     self.msg(channel_to, 'Hokage 1.0 (c) 2016 JoseACS')
              return
 
             p = self.cmd_general_p(r'(bye|chao|adios)[ ]*$', message)
