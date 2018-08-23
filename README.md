@@ -1,5 +1,5 @@
 # Hokage 1.0
-Hokage Bot(1.0) Echo En python 2.6
+Hokage Bot(1.0) Creado en python 2.6
 
 Este bot es muy bueno espero les guste.
 
