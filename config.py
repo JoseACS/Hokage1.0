@@ -3,16 +3,16 @@
 freenode = { 
     'network':'irc.freenode.org', 
     'port':6667, 
-    'nick':'Hokage',
-    'channel': ['##LFKChat'],
+    'nick':'Hokage-',
+    'channel': ['#Hokage'],
     'owner':'JoseACS'
     }
 
 freenode2 = { 
     'network':'irc.freenode.org', 
     'port':6667, 
-    'nick':'Kecv',
-    'channel': ['##Kecv'],
+    'nick':'Hokage_',
+    'channel': ['#Hokage'],
     'owner':'JoseACS'
     }
 
