@@ -15,4 +15,4 @@ else:
     myBot = Bot(configuration=options.configuration)
 
 myBot.main()
-# El nombre del archivo es en aprecio de una gran persona que quiero mucho :*.
+# Archivo actualizado debido a motivos personales.
